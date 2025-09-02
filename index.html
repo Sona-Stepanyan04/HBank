@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Armenian:wght@100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>HBank</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="img/hbank-logo.svg" alt="logo--header" class="logo--header">
+            <div class="person--header--avatar">
+                <img src="img/avatar.png" alt="avatar" class="person--img--avatar">
+                <span class="person--name">Ethan Sutcliffe</span>
+            </div>
+        </header>
+
+        <div class="layout--body">
+            <aside class="sidebar">
+                <nav>
+                    <ul class="sidebar--group">
+                        <li class="sidebar--item">
+                            <img src="img/House.svg" alt="Dashboard" class="sidebar--icon">
+                            <span class="sidebar--label text text--label">Dashboard</span>
+                        </li>
+                    </ul>
+                    <div class="sidebar--section">
+                        <h3 class="sidebar--title text text--label-sm">Analytics</h3>
+                        <ul class="sidebar--group">
+                            <li class="sidebar--item">
+                                <img src="img/show chart-1.svg" alt="Performance" class="sidebar--icon">
+                                <span class="sidebar--label text text--label">Performance</span>
+                            </li>
+                            <li class="sidebar--item one">
+                                <div>
+                                    <img src="img/Archery.svg" alt="Hotjar" class="sidebar--icon">
+                                    <span class="sidebar--label text text--label">Hotjar</span>
+                                </div>
+                                <span class="sidebar--badge text ">New</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar--section">
+                        <h3 class="sidebar--title text text--label-sm">Support</h3>
+                        <ul class="sidebar--group">
+                            <li class="sidebar--item one">
+                                <div>
+                                    <img src="img/ticket.svg" alt="Tickets" class="sidebar--icon">
+                                    <span class="sidebar--label text text--label">Tickets</span>
+                                </div>
+                                <span class="sidebar--badge--tickets text">18</span>
+                            </li>
+                            <li class="sidebar--item">
+                                <img src="img/chat info.svg" alt="Agents" class="sidebar--icon">
+                                <span class="sidebar--label text text--label">Agents</span>
+                            </li>
+                            <li class="sidebar--item">
+                                <img src="img/users.svg" alt="Customers" class="sidebar--icon">
+                                <span class="sidebar--label text text--label">Customers</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar--section">
+                        <h3 class="sidebar--title text text--label-sm">Shop</h3>
+                        <ul class="sidebar--group">
+                            <li class="sidebar--item">
+                                <img src="img/shop.svg" alt="Products" class="sidebar--icon">
+                                <span class="sidebar--label text text--label">Products</span>
+                            </li>
+                            <li class="sidebar--item">
+                                <img src="img/basket.svg" alt="Orders" class="sidebar--icon">
+                                <span class="sidebar--label text text--label">Orders</span>
+                            </li>
+                            <li class="sidebar--item">
+                                <img src="img/chat info.svg" alt="Reports" class="sidebar--icon">
+                                <span class="sidebar--label text text--label">Reports</span>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <footer class="sidebar--footer">
+                    <div class="sidebar--item">
+                        <img src="img/Setting.svg" alt="Settings" class="sidebar--icon">
+                        <span class="sidebar--label text text--label">Settings</span>
+                    </div>
+                    <div class="sidebar--item">
+                        <img src="img/Logout.svg" alt="Logout" class="sidebar--icon">
+                        <span class="sidebar--label text text--label">Logout</span>
+                    </div>
+                </footer>
+            </aside>
+
+            <main class="content">
+                <section class="dashboard">
+
+                    <div class="dashboard--main">
+                        <div class="dashboard--content">
+                            <h2 class="dashboard--title text text--label-bd">Inventory Details</h2>
+                            <div class="dashboard--balance">
+                                <div class="balance">
+                                    <p class="balance--title text text--label">Your balance:</p>
+                                    <p class="balance--amount text text--price">$25,330</p>
+                                    <p class="balance--cards text text--label">3 cards</p>
+                                </div>
+                                <div class="balance--button">
+                                    <button class=" text text--label-bd">Details ➜</button>
+                                </div>
+                            </div>
+                            <div class="dashboard--subtitle">
+                                <h3 class=" text text--label">Inventory Details</h3>
+                                <span class="sidebar--badge--tickets text">2</span>
+                            </div>
+                            <div class="card-list">
+                                <div class="card card--purple">
+                                    <div class="card--top">
+                                        <p class="card--type text text--label">Shopping Card</p>
+                                        <img src="img/card.svg" alt="Card Icon" class="card--icon">
+                                    </div>
+                                    <div class="card--details">
+                                        <span class="card--name text text--label">name</span>
+                                        <span class="card--exp text text--label">Exp 26/6</span>
+                                    </div>
+                                    <div class="card--bottom">
+                                        <p class="card--number text text--number">**** **** 0928</p>
+                                        <img src="img/visa-logo.svg" alt="Visa" class="card--logo">
+                                    </div>
+                                </div>
+                                <div class="card card--peach">
+                                    <div class="card--top">
+                                        <p class="card--type text text--label">Shopping Card</p>
+                                        <img src="img/card.svg" alt="Card Icon" class="card--icon">
+                                    </div>
+                                    <div class="card--details">
+                                        <span class="card--name text text--label">name</span>
+                                        <span class="card--exp text text--label">Exp 26/6</span>
+                                    </div>
+                                    <div class="card--bottom">
+                                        <p class="card--number text text--number">**** **** 4486</p>
+                                        <img src="img/visa-logo.svg" alt="Visa" class="card--logo">
+                                    </div>
+                                </div>
+                                <div class="card card--add">
+                                    <button class="card--button text text--label">+ Add Card</button>
+                                </div>
+                            </div>
+                            <div class="stats-summary">
+                                <div class="stat">
+                                    <div class="stat--icon stat--icon--green">
+                                        <img src="img/show chart.svg" alt="Earnings">
+                                    </div>
+                                    <div class="stat--info">
+                                        <p class="stat--label text text--label">Earnings</p>
+                                        <p class="stat--value text text--price--card">$12,341</p>
+                                    </div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat--icon stat--icon--purple">
+                                        <img src="img/dollar coin.svg" alt="Spendings">
+                                    </div>
+                                    <div class="stat--info">
+                                        <p class="stat--label text text--label">Spendings</p>
+                                        <p class="stat--value text text--price--card">$4,009</p>
+                                    </div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat--icon stat--icon--orange">
+                                        <img src="img/aim.svg" alt="Goals">
+                                    </div>
+                                    <div class="stat--info">
+                                        <p class="stat--label text text--label">Goals</p>
+                                        <p class="stat--value text text--price--card">$8,098</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard--details">
+                        <div class="dashboard--content">
+                            <h3 class="dashboard--details-title text text--label-bd">Card details</h3>
+                            <div class="dashboard--card-preview">
+                                <div class="card card--green card--preview">
+                                    <div class="card--top">
+                                        <p class="card--type text--label">Shopping Card</p>
+                                        <img src="img/card.svg" alt="Card Icon" class="card--icon">
+                                    </div>
+                                    <div class="card--details ">
+                                        <span class="card--name text--label">name</span>
+                                        <span class="card--exp text--label">Exp 26/6</span>
+                                    </div>
+                                    <div class="card--bottom">
+                                        <p class="card--number text--number">**** **** 0928</p>
+                                        <img src="img/visa-logo.svg" alt="Visa" class="card--logo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-info">
+                                <p class="card-info--label text text--label-sm">CARD NUMBER</p>
+                                <p class="card-info--value text text--number">**** 1234 4567 7800</p>
+                                <div class="card-info--row">
+                                    <div class="card-info--item">
+                                        <p class="card-info--item-label text text--label-sm">EXPIRE DATE</p>
+                                        <p class="card-info--item-value text text--body">08/28</p>
+                                    </div>
+                                    <div class="card-info--item">
+                                        <p class="card-info--item-label text text--label-sm">CVV</p>
+                                        <p class="card-info--item-value text text--body">08/28</p>
+                                    </div>
+                                    <div class="card-info--item">
+                                        <p class="card-info--item-label text text--label-sm">LEVEL</p>
+                                        <p class="card-info--item-value text text--body">02</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-limits">
+                                <h4 class="card-limits--title text text--label-bd">Spending limits</h4>
+                                <p class="card-limits--subtitle text text--label-sm">DAILY TRANSACTION LIMIT</p>
+                                <div class="card-limits--progress">
+                                    <div class="card-limits--bar"></div>
+                                </div>
+                                <p class="card-limits--text text text--body">$400 spent of $2000</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
