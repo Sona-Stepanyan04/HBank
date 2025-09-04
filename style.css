@@ -11,25 +11,42 @@
     --fc-new: #800970;
 }
 
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
 body {
     font-family: "Outfit", sans-serif;
     width: 100%;
     background-color: var(--bgc);
+    color: var(--fc-white);
 }
 
 .wrapper {
     color: var(--fc-white);
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    inset: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     margin: 0 auto;
     max-width: 1440px;
 }
+
 
 header {
     display: flex;
     justify-content: space-between;
     padding: clamp(8px, 2vw, 20px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    grid-row: 1/2;
 
     .person--header--avatar {
         display: flex;
@@ -39,8 +56,17 @@ header {
     }
 }
 
+
+
 .layout--body {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    overflow: hidden;
+}
+
+.content{
+    overflow-y: auto;
+    height: 100%;
 }
 
 .sidebar {
@@ -49,6 +75,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    grid-column: 1/2;
+    overflow-y: auto;
 }
 
 nav {
